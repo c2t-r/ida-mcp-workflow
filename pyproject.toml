@@ -1,0 +1,27 @@
+[project]
+name = "ida-workflow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "ida-pro-mcp"
+]
+
+[dependency-groups]
+dev = ["ruff>=0.14.10"]
+
+[tool.ruff]
+lint.select = ["F", "UP", "I", "E", "ANN"]
+lint.ignore = ["ANN401"]
+indent-width = 2
+line-length = 120
+
+[tool.ruff.format]
+indent-style = "space"
+line-ending = "auto"
+quote-style = "double"
+skip-magic-trailing-comma = false
+
+[tool.uv.sources]
+ida-pro-mcp = { url = "https://github.com/mrexodia/ida-pro-mcp/archive/aaebe5f1b93d9a80173019de7ae1cf8bc048ee89.zip" }

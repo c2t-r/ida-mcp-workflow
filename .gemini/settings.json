@@ -1,0 +1,9 @@
+{
+  "general.enableNotifications": true,
+  "skills.enabled": true,
+  "mcpServers": {
+    "ida-pro-mcp": {
+      "httpUrl": "http://127.0.0.1:13337/mcp"
+    }
+  }
+}

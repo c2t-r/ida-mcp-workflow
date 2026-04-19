@@ -1,0 +1,13 @@
+{
+  "name": "ida-workflow",
+  "private": true,
+  "packageManager": "pnpm@10.29.1",
+  "scripts": {
+    "setup": "bash ./setup.sh",
+    "lint": "pnpm markdownlint-cli2 --config ./.markdownlint-cli2.jsonc",
+    "fixpy": "uv run ruff check --fix --unsafe-fixes . && uv run ruff format ."
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.18.1"
+  }
+}

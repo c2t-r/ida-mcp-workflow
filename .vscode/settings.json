@@ -1,0 +1,7 @@
+{
+  "chat.useAgentSkills": true,
+  "chat.agentSkillsLocations": {
+    ".skills": true,
+  },
+  "chat.useAgentsMdFile": true
+}
